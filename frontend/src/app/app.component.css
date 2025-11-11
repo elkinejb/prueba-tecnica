@@ -1,0 +1,49 @@
+/* Centrar todo el contenido del header */
+header {
+  text-align: center;
+  background-color: #c4c4d9;
+  color: rgb(18, 15, 15);
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Título principal */
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Menú de navegación */
+nav {
+  margin-top: 15px;
+}
+
+/* Enlaces del menú */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover sobre enlaces */
+nav a:hover {
+  color: #00bcd4;
+}
+
+/* Enlace activo (ruta actual) */
+nav a.active {
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 4px;
+}
+
+/* Centrar el contenido principal */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 80vh;
+  padding-top: 40px;
+}

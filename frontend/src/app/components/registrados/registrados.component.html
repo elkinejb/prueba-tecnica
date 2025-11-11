@@ -1,0 +1,20 @@
+<h2>Productos Registrados</h2>
+
+<table *ngIf="productos.length > 0; else noData">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of productos">
+      <td>{{ p.nombre }}</td>
+      <td>{{ p.precio | currency:'COP' }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<ng-template #noData>
+  <p>No hay productos registrados.</p>
+</ng-template>
